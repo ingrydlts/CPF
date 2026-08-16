@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CPF na França: como consultar seu saldo e os 2 detalhes que travam a compra | Por Dentro</title>
+<meta name="description" content="Passo a passo pra consultar seu saldo do Compte Personnel de Formation (CPF) na França, quanto você tem direito, e os 2 detalhes de 2026 que ninguém avisa antes de comprar uma formação.">
+
+<!-- Google tag (gtag.js) - GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K418SX0PL6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-K418SX0PL6');
+</script>
+
+<!-- Microsoft Clarity — ID pendente: gerar após publicar a URL final no GitHub Pages -->
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "CLARITY_ID_AQUI");
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --off-white:#F5F0E8;
+    --carvao:#2C2C2C;
+    --terracota:#C4785A;
+    --terracota-escuro:#A65F44;
+    --alerta-bg:#FBE9E2;
+    --alerta-borda:#C4785A;
+    --ok-bg:#EAF0E5;
+    --ok-borda:#7C9A6A;
+    --branco:#FFFFFF;
+    --cinza-texto:#5A5652;
+    --sombra:0 4px 20px rgba(44,44,44,.08);
+    --radius:16px;
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0;}
+
+  html{scroll-behavior:smooth;}
+
+  body{
+    font-family:'Inter',sans-serif;
+    background:var(--off-white);
+    color:var(--carvao);
+    line-height:1.6;
+    font-size:16px;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  h1,h2,h3,h4{
+    font-family:'Poppins',sans-serif;
+    font-weight:700;
+    line-height:1.25;
+    color:var(--carvao);
+  }
+
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+
+  .container{
+    width:100%;
+    max-width:640px;
+    margin:0 auto;
+    padding:0 20px;
+  }
+
+  /* ===== HEADER ===== */
+  header{
+    position:sticky;
+    top:0;
+    z-index:100;
+    background:rgba(245,240,232,.95);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid rgba(44,44,44,.08);
+  }
+  .header-inner{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:14px 20px;
+    max-width:640px;
+    margin:0 auto;
+  }
+  .wordmark{
+    font-family:'Poppins',sans-serif;
+    font-weight:800;
+    font-size:1.05rem;
+    letter-spacing:-.01em;
+    color:var(--carvao);
+    text-decoration:none;
+  }
+  .wordmark span{color:var(--terracota);}
+  .header-social{
+    display:flex;
+    gap:14px;
+  }
+  .header-social a{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:34px;height:34px;
+    border-radius:50%;
+    background:var(--carvao);
+    color:var(--off-white);
+    font-size:.7rem;
+    text-decoration:none;
+    font-weight:700;
+  }
+
+  /* ===== HERO ===== */
+  .hero{
+    padding:44px 0 36px;
+    text-align:center;
+  }
+  .hero .kicker{
+    display:inline-block;
+    background:var(--carvao);
+    color:var(--off-white);
+    font-size:.72rem;
+    font-weight:700;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+    padding:6px 14px;
+    border-radius:999px;
+    margin-bottom:18px;
+  }
+  .hero h1{
+    font-size:1.9rem;
+    margin-bottom:14px;
+  }
+  .hero h1 em{
+    font-style:normal;
+    color:var(--terracota);
+  }
+  .hero p{
+    font-size:1.02rem;
+    color:var(--cinza-texto);
+    max-width:480px;
+    margin:0 auto 24px;
+  }
+  .stat-row{
+    display:flex;
+    gap:12px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-top:8px;
+  }
+  .stat-pill{
+    background:var(--branco);
+    border-radius:var(--radius);
+    padding:14px 18px;
+    box-shadow:var(--sombra);
+    min-width:130px;
+  }
+  .stat-pill strong{
+    display:block;
+    font-family:'Poppins',sans-serif;
+    font-size:1.5rem;
+    color:var(--terracota);
+  }
+  .stat-pill span{
+    font-size:.78rem;
+    color:var(--cinza-texto);
+  }
+
+  /* ===== SECTIONS ===== */
+  section{
+    padding:40px 0;
+  }
+  section.alt{
+    background:var(--branco);
+  }
+  .section-label{
+    font-size:.72rem;
+    font-weight:700;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--terracota);
+    margin-bottom:8px;
+    display:block;
+  }
+  h2{
+    font-size:1.45rem;
+    margin-bottom:16px;
+  }
+  section > .container > p{
+    color:var(--cinza-texto);
+    margin-bottom:16px;
+  }
+
+  /* cards de valores */
+  .cards-2{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:14px;
+    margin-top:20px;
+  }
+  .card{
+    background:var(--branco);
+    border-radius:var(--radius);
+    padding:22px;
+    box-shadow:var(--sombra);
+    border-top:4px solid var(--terracota);
+  }
+  .card h3{
+    font-size:1.05rem;
+    margin-bottom:6px;
+  }
+  .card .valor{
+    font-family:'Poppins',sans-serif;
+    font-size:2rem;
+    color:var(--terracota);
+    margin:8px 0 4px;
+  }
+  .card .teto{
+    font-size:.85rem;
+    color:var(--cinza-texto);
+    font-weight:600;
+  }
+  .card p{
+    font-size:.92rem;
+    color:var(--cinza-texto);
+    margin-top:10px;
+  }
+
+  /* passo a passo */
+  .steps{
+    counter-reset:step;
+    margin-top:22px;
+  }
+  .step{
+    display:flex;
+    gap:16px;
+    padding:18px 0;
+    border-bottom:1px solid rgba(44,44,44,.08);
+  }
+  .step:last-child{border-bottom:none;}
+  .step-num{
+    counter-increment:step;
+    flex-shrink:0;
+    width:34px;height:34px;
+    border-radius:50%;
+    background:var(--carvao);
+    color:var(--off-white);
+    display:flex;align-items:center;justify-content:center;
+    font-family:'Poppins',sans-serif;
+    font-weight:700;
+    font-size:.95rem;
+  }
+  .step-num::before{content:counter(step);}
+  .step h4{
+    font-size:1rem;
+    margin-bottom:4px;
+  }
+  .step p{
+    font-size:.92rem;
+    color:var(--cinza-texto);
+  }
+  .step a{
+    color:var(--terracota-escuro);
+    font-weight:600;
+    text-decoration:underline;
+  }
+
+  /* alertas */
+  .alerta{
+    background:var(--alerta-bg);
+    border:2px solid var(--alerta-borda);
+    border-radius:var(--radius);
+    padding:22px;
+    margin-bottom:18px;
+  }
+  .alerta .alerta-tag{
+    display:inline-block;
+    background:var(--terracota);
+    color:#fff;
+    font-size:.7rem;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:.05em;
+    padding:4px 10px;
+    border-radius:6px;
+    margin-bottom:10px;
+  }
+  .alerta h3{
+    font-size:1.1rem;
+    margin-bottom:8px;
+  }
+  .alerta p{
+    font-size:.93rem;
+    color:var(--carvao);
+    margin-bottom:10px;
+  }
+  .alerta p:last-child{margin-bottom:0;}
+  .alerta strong{color:var(--terracota-escuro);}
+
+  .ok-box{
+    background:var(--ok-bg);
+    border:2px solid var(--ok-borda);
+    border-radius:var(--radius);
+    padding:16px 20px;
+    font-size:.92rem;
+  }
+  .ok-box strong{display:block;margin-bottom:4px;}
+
+  /* solucoes / opcoes lado a lado */
+  .opcoes{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:14px;
+    margin-top:16px;
+  }
+  .opcao{
+    background:var(--branco);
+    border-radius:12px;
+    padding:18px;
+    border:1px solid rgba(44,44,44,.1);
+  }
+  .opcao h4{
+    font-size:.98rem;
+    margin-bottom:6px;
+    color:var(--terracota-escuro);
+  }
+  .opcao p{
+    font-size:.88rem;
+    color:var(--cinza-texto);
+  }
+  .opcao address{
+    font-style:normal;
+    font-size:.85rem;
+    background:var(--off-white);
+    padding:10px 12px;
+    border-radius:8px;
+    margin-top:8px;
+    line-height:1.5;
+  }
+
+  /* accordion (caminhos / faq) */
+  details{
+    background:var(--branco);
+    border-radius:12px;
+    padding:16px 18px;
+    margin-bottom:10px;
+    box-shadow:var(--sombra);
+  }
+  summary{
+    font-family:'Poppins',sans-serif;
+    font-weight:600;
+    font-size:.98rem;
+    cursor:pointer;
+    list-style:none;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+  }
+  summary::-webkit-details-marker{display:none;}
+  summary::after{
+    content:"+";
+    font-size:1.4rem;
+    color:var(--terracota);
+    font-weight:400;
+    margin-left:10px;
+  }
+  details[open] summary::after{content:"–";}
+  details p, details ul{
+    margin-top:10px;
+    font-size:.9rem;
+    color:var(--cinza-texto);
+  }
+  details ul{padding-left:18px;}
+  details li{margin-bottom:6px;}
+
+  /* tabela comparativa */
+  .tabela-wrap{
+    overflow-x:auto;
+    margin-top:18px;
+    border-radius:var(--radius);
+    box-shadow:var(--sombra);
+  }
+  table{
+    width:100%;
+    border-collapse:collapse;
+    background:var(--branco);
+    font-size:.85rem;
+    min-width:520px;
+  }
+  th,td{
+    text-align:left;
+    padding:12px 14px;
+    border-bottom:1px solid rgba(44,44,44,.08);
+  }
+  th{
+    background:var(--carvao);
+    color:var(--off-white);
+    font-family:'Poppins',sans-serif;
+    font-weight:600;
+    font-size:.78rem;
+    text-transform:uppercase;
+    letter-spacing:.04em;
+  }
+  tr:last-child td{border-bottom:none;}
+  td strong{color:var(--terracota-escuro);}
+
+  /* CAP callout */
+  .cap-box{
+    background:var(--carvao);
+    color:var(--off-white);
+    border-radius:var(--radius);
+    padding:24px;
+    margin-top:20px;
+  }
+  .cap-box h3{
+    color:var(--off-white);
+    font-size:1.1rem;
+    margin-bottom:8px;
+  }
+  .cap-box p{
+    color:#D9D5CE;
+    font-size:.92rem;
+  }
+  .cap-box strong{color:var(--terracota);}
+
+  /* fontes */
+  .fontes{
+    font-size:.8rem;
+    color:var(--cinza-texto);
+  }
+  .fontes ul{padding-left:18px;margin-top:10px;}
+  .fontes li{margin-bottom:8px;}
+  .fontes a{color:var(--terracota-escuro);text-decoration:underline;word-break:break-word;}
+
+  /* footer */
+  footer{
+    background:var(--carvao);
+    color:var(--off-white);
+    padding:36px 0 28px;
+    text-align:center;
+  }
+  footer .wordmark{color:var(--off-white);}
+  footer .wordmark span{color:var(--terracota);}
+  footer p{
+    font-size:.82rem;
+    color:#B8B4AE;
+    margin:14px 0;
+  }
+  footer .header-social a{
+    background:var(--off-white);
+    color:var(--carvao);
+  }
+  footer .header-social{
+    justify-content:center;
+    margin:16px 0;
+  }
+
+  /* ===== TABLET / DESKTOP ===== */
+  @media (min-width:640px){
+    .container{max-width:680px;padding:0 32px;}
+    .hero h1{font-size:2.3rem;}
+    .cards-2{grid-template-columns:1fr 1fr;}
+    .opcoes{grid-template-columns:1fr 1fr;}
+    section{padding:56px 0;}
+  }
+  @media (min-width:900px){
+    .container{max-width:760px;}
+    .hero{padding:64px 0 48px;}
+    .hero h1{font-size:2.6rem;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="#topo" class="wordmark">por<span>dentro</span></a>
+    <div class="header-social">
+      <a href="https://www.instagram.com/ingryd.pordentro" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+    </div>
+  </div>
+</header>
+
+<main id="topo">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <span class="kicker">Sistema · Burocracia França</span>
+      <h1>A França guarda até <em>8.000€</em> pra você gastar em formação</h1>
+      <p>E a maioria nunca usa, porque ninguém explica direito como consultar e ativar. Aqui está o passo a passo — e os 2 detalhes de 2026 que travam quem não sabe.</p>
+      <div class="stat-row">
+        <div class="stat-pill"><strong>500–800€</strong><span>acumulados por ano</span></div>
+        <div class="stat-pill"><strong>5.000–8.000€</strong><span>teto da conta</span></div>
+        <div class="stat-pill"><strong>150€</strong><span>taxa desde abril/2026</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- O QUE É -->
+  <section class="alt">
+    <div class="container">
+      <span class="section-label">01 — O que é</span>
+      <h2>CPF não é o seu CPF brasileiro</h2>
+      <p>Na França, CPF é sigla de <strong>Compte Personnel de Formation</strong> — uma conta em euros que você acumula sozinho enquanto trabalha formal, pra investir em formação profissional. Idioma, requalificação, certificação técnica, até um CAP. É dinheiro real, parado, esperando você usar.</p>
+      <p>Se você trabalha com carteira assinada (contrato salarié), você acumula esse valor automaticamente — não precisa pedir nada, não precisa depositar nada. Só precisa saber que existe e ir consultar.</p>
+    </div>
+  </section>
+
+  <!-- QUANTO VOCÊ TEM -->
+  <section>
+    <div class="container">
+      <span class="section-label">02 — Quanto você acumula</span>
+      <h2>Depende do seu diploma na França</h2>
+      <div class="cards-2">
+        <div class="card">
+          <h3>Caso geral</h3>
+          <div class="valor">500€<span style="font-size:1rem;color:var(--cinza-texto);">/ano</span></div>
+          <div class="teto">Teto de 5.000€</div>
+          <p>Se você trabalha em tempo integral (temps plein) e já tem um diploma reconhecido em nível bac ou superior na França.</p>
+        </div>
+        <div class="card">
+          <h3>Sem diploma bac na França</h3>
+          <div class="valor">800€<span style="font-size:1rem;color:var(--cinza-texto);">/ano</span></div>
+          <div class="teto">Teto de 8.000€</div>
+          <p>É o caso de boa parte de quem chegou recente. Se o seu diploma brasileiro ainda não foi equivalido, você provavelmente está nessa faixa — e tem mais direito do que imagina.</p>
+        </div>
+      </div>
+      <div class="ok-box" style="margin-top:16px;">
+        <strong>Está desempregado(a)?</strong>
+        Se você está inscrito no France Travail, sua conta para de ser alimentada, mas os direitos já acumulados continuam lá — e o France Travail pode ainda complementar (abondement) o valor pra sua formação.
+      </div>
+    </div>
+  </section>
+
+  <!-- PASSO A PASSO -->
+  <section class="alt">
+    <div class="container">
+      <span class="section-label">03 — Passo a passo</span>
+      <h2>Como consultar seu saldo</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num"></div>
+          <div>
+            <h4>Separe seu número de sécu e carte vitale</h4>
+            <p>Você vai precisar do número de sécurité sociale (mesmo o provisório já funciona, ainda que com limitações) e, se já tiver, da carte vitale ou attestation Ameli.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num"></div>
+          <div>
+            <h4>Acesse moncompteformation.gouv.fr</h4>
+            <p>Pelo site <a href="https://www.moncompteformation.gouv.fr" target="_blank" rel="noopener">moncompteformation.gouv.fr</a> ou pelo app oficial "Mon Compte Formation".</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num"></div>
+          <div>
+            <h4>Faça login pelo FranceConnect+</h4>
+            <p>Com Identité Numérique La Poste ou identidade certificada France Identité. <strong style="color:var(--terracota-escuro);">Atenção:</strong> aqui é onde pode travar — veja o Alerta 2 mais abaixo.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num"></div>
+          <div>
+            <h4>Clique em "Consulter mes droits"</h4>
+            <p>Seu saldo acumulado aparece direto na tela inicial da sua conta. Se estiver zerado, é normal caso você tenha entrado no mercado de trabalho recentemente — os direitos vão se acumulando ano a ano.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ALERTA 1 - TAXA 150 -->
+  <section>
+    <div class="container">
+      <span class="section-label">04 — Antes de comprar, alerta 1</span>
+      <h2>A taxa obrigatória de 150€</h2>
+      <div class="alerta">
+        <span class="alerta-tag">Mudou em abril/2026</span>
+        <h3>Toda compra de formação tem uma participação obrigatória do seu bolso</h3>
+        <p>Desde <strong>2 de abril de 2026</strong> (Decreto n° 2026-234, de 30 de março de 2026), qualquer pessoa que usa o CPF pra financiar uma formação paga <strong>150€ de participation forfaitaire</strong> no momento da inscrição — independente do valor da formação. É um forfait único, pago direto no site, por cartão ou transferência.</p>
+        <p>Esse valor é reajustado todo início de ano pela inflação: era 100€ quando criado em 2024, passou a 103,20€ em janeiro/2026, e subiu pra 150€ em abril/2026.</p>
+      </div>
+      <div class="ok-box">
+        <strong>Quem não paga essa taxa:</strong>
+        Inscritos no France Travail (isenção total, com validação do conselheiro referente), quem tem abondement do empregador feito após maio/2024, titulares do compte professionnel de prévention (C2P), e beneficiários de incapacidade permanente ≥10% por acidente de trabalho ou doença profissional.
+      </div>
+    </div>
+  </section>
+
+  <!-- ALERTA 2 - TITRE < 5 ANOS -->
+  <section class="alt">
+    <div class="container">
+      <span class="section-label">05 — Antes de comprar, alerta 2</span>
+      <h2>Titre de séjour com menos de 5 anos pode travar o login</h2>
+      <div class="alerta">
+        <span class="alerta-tag">Detalhe que ninguém avisa</span>
+        <h3>Por que isso acontece</h3>
+        <p>O login do CPF exige FranceConnect+, e o FranceConnect+ só aceita a Identité Numérique La Poste (ou France Identité) — que pede um <strong>documento de identidade com validade residual superior a 5 anos</strong>. Como a maioria de quem chegou recente tem titre de séjour anual ou de 2 a 4 anos, o sistema barra o login mesmo com todos os documentos em dia.</p>
+      </div>
+      <p style="margin-top:22px;font-weight:600;">Mas tem saída — e é oficial, não é gambiarra:</p>
+      <div class="opcoes">
+        <div class="opcao">
+          <h4>Opção 1 — Verificação online (~4 semanas)</h4>
+          <p>Crie sua conta normalmente em moncompteformation.gouv.fr, depois acesse <strong>verifiermonidentite.moncompteformation.gouv.fr</strong> já logado no seu espaço MCF. Envie foto do titre de séjour e da carte vitale. A checagem manual leva cerca de 4 semanas.</p>
+        </div>
+        <div class="opcao">
+          <h4>Opção 2 — Correio (se a opção 1 não funcionar)</h4>
+          <p>Baixe o formulário de verificação alternativa no site oficial, junte cópia do titre de séjour + attestation de sécurité sociale, e envie sem selo para:</p>
+          <address>
+            MCF — Service de demande de vérification d'identité<br>
+            Libre Réponse 78788<br>
+            59889 LILLE CEDEX 9
+          </address>
+          <p style="margin-top:8px;">Confirmação por carta registrada ou e-mail em até 10 dias após a checagem — daí você retoma a compra normalmente.</p>
+        </div>
+      </div>
+      <div class="ok-box" style="margin-top:16px;">
+        <strong>Dica prática:</strong>
+        Comece essa verificação assim que perceber que vai precisar — os 4 semanas podem te travar bem na hora em que a formação que você quer estiver com vaga aberta.
+      </div>
+    </div>
+  </section>
+
+  <!-- PRA QUE SERVE -->
+  <section>
+    <div class="container">
+      <span class="section-label">06 — Pra que serve de verdade</span>
+      <h2>Formações elegíveis e o caso do CAP</h2>
+      <p>Você pode usar o saldo em qualquer formação registrada no <strong>RNCP</strong> (Répertoire National des Certifications Professionnelles): curso de idioma, requalificação profissional, certificação técnica, preparação pra concursos, entre outros — desde que o organismo tenha o selo Qualiopi.</p>
+      <div class="cap-box">
+        <h3>O caso especial do CAP</h3>
+        <p>Formação registrada no RNCP tem uma regra própria: você pode usar <strong>todo o saldo do CPF nela, sem o teto</strong> que existe pra outros tipos de curso. Ou seja, mesmo que seu saldo seja menor que o valor total do CAP, ele ainda entra nessa categoria sem limite artificial — é só completar a diferença (mais os 150€, se não for isento).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CPF x OFII + TABELA PLAFONDS -->
+  <section class="alt">
+    <div class="container">
+      <span class="section-label">07 — Pra não confundir</span>
+      <h2>CPF não é a mesma coisa que a formação do OFII</h2>
+      <p>É comum confundir os dois. São sistemas diferentes que podem se combinar:</p>
+      <div class="tabela-wrap">
+        <table>
+          <thead>
+            <tr><th>Formação OFII (CIR)</th><th>CPF (Mon Compte Formation)</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Obrigatória pra todo primo-arrivant</td><td>Facultativa, por sua iniciativa</td></tr>
+            <tr><td>Gratuita, financiada pelo Estado</td><td><strong>150€</strong> de reste à charge (salvo isenção)</td></tr>
+            <tr><td>Francês + vida cívica</td><td>Formações certificantes, reconversão</td></tr>
+            <tr><td>Não gera certificação RNCP</td><td>Gera certificação reconhecida</td></tr>
+            <tr><td>Não usa seu CPF</td><td>Usa seus direitos acumulados</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="margin-top:20px;">Desde fevereiro/2026, também existem tetos por tipo de formação, independente do seu saldo total:</p>
+      <div class="tabela-wrap">
+        <table>
+          <thead>
+            <tr><th>Tipo de formação</th><th>Teto de mobilização</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Certificações e habilitações</td><td><strong>1.500€</strong></td></tr>
+            <tr><td>Bilan de compétences</td><td><strong>1.600€</strong></td></tr>
+            <tr><td>Permis B (carro)</td><td><strong>900€</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <div class="container">
+      <span class="section-label">08 — Perguntas frequentes</span>
+      <h2>Ficou alguma dúvida?</h2>
+      <details>
+        <summary>Preciso ter diploma francês pra ter direito ao CPF?</summary>
+        <p>Não. Basta trabalhar com contrato salarié na França. O que muda é o valor: sem diploma reconhecido em nível bac aqui, você acumula mais (800€/ano em vez de 500€/ano).</p>
+      </details>
+      <details>
+        <summary>E se eu ainda tiver o número de sécu provisório?</summary>
+        <p>Ele já é suficiente pra abrir e consultar sua conta em muitos casos, mas algumas formações exigem o número definitivo pra fechar a inscrição. Se o seu ainda está em validação, acelere com sua CPAM.</p>
+      </details>
+      <details>
+        <summary>Posso combinar CPF com outras fontes de financiamento?</summary>
+        <p>Sim. Se seu saldo for insuficiente, dá pra pedir abondement (complemento) ao seu empregador via OPCO, ou ao France Travail se estiver em busca de emprego.</p>
+      </details>
+      <details>
+        <summary>Perco o dinheiro se eu sair da França?</summary>
+        <p>Os direitos do CPF não são resgatáveis em dinheiro — servem só pra financiar formação elegível enquanto você reside e trabalha na França.</p>
+      </details>
+      <details>
+        <summary>Todo organismo de formação aceita CPF?</summary>
+        <p>Só os que têm o selo Qualiopi. Sem esse selo, a formação não é elegível — e você perde os 150€ pagos sem conseguir usar o crédito.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- FONTES -->
+  <section>
+    <div class="container">
+      <span class="section-label">Fontes oficiais</span>
+      <h2 style="font-size:1.15rem;">De onde vieram essas informações</h2>
+      <div class="fontes">
+        <ul>
+          <li><a href="https://www.service-public.gouv.fr/particuliers/vosdroits/F10705" target="_blank" rel="noopener">Service-Public.gouv.fr — Compte personnel de formation (salarié secteur privé), F10705</a></li>
+          <li><a href="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053742996" target="_blank" rel="noopener">Légifrance — Décret n° 2026-234 du 30 mars 2026 (participation forfaitaire de 150€)</a></li>
+          <li><a href="https://www.moncompteformation.gouv.fr/espace-public/je-ne-remplis-pas-les-conditions-pour-utiliser-franceconnect" target="_blank" rel="noopener">MonCompteFormation.gouv.fr — Vérification d'identité alternative (titre de séjour &lt; 5 anos)</a></li>
+          <li><a href="https://www.moncompteformation.gouv.fr/espace-public/de-nouvelles-regles-pour-mobiliser-votre-cpf" target="_blank" rel="noopener">MonCompteFormation.gouv.fr — Novas regras e tetos por tipo de formação (fev/2026)</a></li>
+          <li><a href="https://www.moncompteformation.gouv.fr" target="_blank" rel="noopener">MonCompteFormation.gouv.fr — Site oficial</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <a href="#topo" class="wordmark">por<span>dentro</span></a>
+    <div class="header-social">
+      <a href="https://www.instagram.com/ingryd.pordentro" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+    </div>
+    <p>Conteúdo informativo, baseado em fontes oficiais do governo francês. Não substitui aconselhamento jurídico individual — cada situação de titre de séjour tem particularidades. Última atualização: agosto/2026.</p>
+  </div>
+</footer>
+
+</body>
+</html>
